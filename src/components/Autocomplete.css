@@ -1,6 +1,9 @@
 body {
     background:linear-gradient(90deg, rgb(191, 191, 219) 0%, rgb(187, 185, 94) 100%);
   }
+.total{
+  height: 90vh;
+}  
   .search {
     
     margin: -8rem auto 2rem auto;

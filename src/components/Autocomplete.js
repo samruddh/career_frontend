@@ -131,6 +131,7 @@ export class Autocomplete extends Component {
 
     return (
       <React.Fragment>
+        <div className="total">
         <h1>Enter Location Name to search (Ex:Riverrun):</h1>
         <div className="search">
           <input
@@ -146,6 +147,7 @@ export class Autocomplete extends Component {
           
         {optionList}
         {displayData}
+      </div>
       </React.Fragment>
     );
   }
