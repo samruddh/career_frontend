@@ -12,16 +12,13 @@ const Search = () => {
         options={[
           "King's Landing",
           "Duskendale",
-          "Storm's End",
           "Riverrun",
           "Mummer's Ford",
           "Oxcross",
           "Whispering Wood",
           "Green Fork",
           "Stony Shore",
-          "Torrhen's Square",
           "Ruby Ford",
-          "Darry",
           "Red Fork",
           "Crag",
           "Ryamsport, Vinetown, Starfish Harbor",
@@ -33,20 +30,13 @@ const Search = () => {
           "Saltpans",
           "Dragonstone",
           "Winterfell",
-          "Harrenhal",
           "Shield Islands",
           "Storm's End",
-          "Winterfell",
           "Deepwood Motte",
           "Raventree",
-          "Riverrun",
-          "Deepwood Motte",
           "The Twins",
           "Castle Black",
-          "Riverrun",
-          "Moat Cailin",
-          "Moat Cailin",
-          "Winterfell"
+          "Moat Cailin"
       ]}
       />
     </div>
