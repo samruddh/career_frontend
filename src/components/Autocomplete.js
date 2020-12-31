@@ -44,7 +44,7 @@ export class Autocomplete extends Component {
 
   onclick2 = ()=>{
     const searchParam = this.state.userInput;
-    const url = `http://localhost:8000/api/search?location=${searchParam}`;
+    const url = `http://3.84.185.161/:8000/api/search?location=${searchParam}`;
 
      fetch(url).then(response => response.json()).then(data =>{ this.setState({api_data: data})});
      const api_data = this.state.api_data;
@@ -84,6 +84,7 @@ export class Autocomplete extends Component {
       state: { activeOption, filteredOptions, showOptions, userInput }
     } = this;
     let optionList;
+    
     if (showOptions && userInput) {
       if (filteredOptions.length) {
         optionList = (
@@ -130,6 +131,7 @@ export class Autocomplete extends Component {
 
     return (
       <React.Fragment>
+        <h1>Enter Location Name to search (Ex:Riverrun):</h1>
         <div className="search">
           <input
             type="text"
@@ -138,7 +140,7 @@ export class Autocomplete extends Component {
             onKeyDown={onKeyDown}
             value={userInput}
           />
-          <input type="submit"  className="search-btn" onClick={onclick2} />
+          <input type="submit" className="search-btn" onClick={onclick2} />
         </div>
           
           
