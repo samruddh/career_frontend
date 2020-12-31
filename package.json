@@ -1,6 +1,6 @@
 {
-  "name": "navbar-dropdown-v1",
-  "version": "0.1.0",
+  "name": "Career_Ninja_assignment",
+  "version": "2.4",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
