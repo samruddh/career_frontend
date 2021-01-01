@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Footer from './Footer';
 
 export class Autocomplete extends Component {
   static propTypes = {
@@ -44,7 +45,7 @@ export class Autocomplete extends Component {
 
   onclick2 = ()=>{
     const searchParam = this.state.userInput;
-    const url = `http://3.84.185.161/:8000/api/search?location=${searchParam}`;
+    const url = `http://localhost:8000/api/search?location=${searchParam}`;
 
      fetch(url).then(response => response.json()).then(data =>{ this.setState({api_data: data})});
      const api_data = this.state.api_data;
@@ -147,7 +148,9 @@ export class Autocomplete extends Component {
           
         {optionList}
         {displayData}
+        
       </div>
+      <Footer/>
       </React.Fragment>
     );
   }

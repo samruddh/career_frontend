@@ -40,7 +40,6 @@ const Search = () => {
       ]}
       />
     </div>
-    <Footer />
     </>
   );
 };

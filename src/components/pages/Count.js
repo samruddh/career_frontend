@@ -9,7 +9,7 @@ function Count(){
 
   useEffect(()=>{
     async function fetchData() {
-      const res = await fetch("http://3.84.185.161/:8000/api/count");
+      const res = await fetch("http://localhost:8000/api/count");
       res
         .json()
         .then(res => setCounts(res))

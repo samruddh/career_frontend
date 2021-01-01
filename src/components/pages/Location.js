@@ -8,7 +8,7 @@ export default class location extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "http://3.84.185.161/:8000/api/list";
+    const url = "http://localhost:8000/api/list";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ people: data, loading: false });

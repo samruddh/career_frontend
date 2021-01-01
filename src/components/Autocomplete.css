@@ -1,9 +1,6 @@
 body {
     background:linear-gradient(90deg, rgb(191, 191, 219) 0%, rgb(187, 185, 94) 100%);
   }
-.total{
-  height: 90vh;
-}  
   .search {
     
     margin: -8rem auto 2rem auto;
@@ -50,13 +47,14 @@ body {
     outline: none;
     opacity: 0.6;
   }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 500px) {
     .search{
       width:23rem;
     }
     ul.options{
       width:23rem;
     }
+   
   }
   @media screen and (min-width: 1080px) {
     .search{
@@ -65,6 +63,7 @@ body {
     ul.options{
       width:30rem;
     }
+    
   }
   
   ul.options {
