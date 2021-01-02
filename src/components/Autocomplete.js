@@ -131,7 +131,7 @@ export class Autocomplete extends Component {
    
 
     return (
-      <React.Fragment>
+     <React.Fragment>
         <div className="total">
         <h1>Enter Location Name to search (Ex:Riverrun):</h1>
         <div className="search">
@@ -143,15 +143,11 @@ export class Autocomplete extends Component {
             value={userInput}
           />
           <input type="submit" className="search-btn" onClick={onclick2} />
-        </div>
-          
-          
+        </div> 
         {optionList}
-        {displayData}
-        
-      </div>
-      <Footer/>
-      </React.Fragment>
+        {displayData}  
+        </div>
+     </React.Fragment>
     );
   }
 }
